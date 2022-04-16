@@ -1,0 +1,3 @@
+this third hotfix to check remote branchs in details
+there is remote branch tracking options or tracker in local which will maintain state or remote branch until it communicates to remote network
+git fetch will udpate all remote tracking branching tracking withoug distrubing current local branch 
