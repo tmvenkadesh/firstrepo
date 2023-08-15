@@ -4,4 +4,4 @@ git fetch will udpate all remote tracking branching tracking withoug distrubing 
 rebase testing is going to be peformed
 rebase is just to clean history, same can be done with merging command also
 however if you rebase the code with master, history will be shown in one line instead of branch
-we will learn more about rebase further exploring
+we will learn more about rebase further into the code
