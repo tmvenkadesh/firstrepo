@@ -1,0 +1,45 @@
+{
+  "name": "online-evaluation-tools",
+  "version": "1.0.0",
+  "description": "Online evaluation tools for developers with enterprise SSO authentication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "jest --testTimeout=30000",
+    "test:watch": "jest --watch --testTimeout=30000",
+    "test:coverage": "jest --coverage --testTimeout=30000",
+    "seed": "node scripts/seedQuestions.js",
+    "seed:clear": "node scripts/seedQuestions.js --clear"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "passport": "^0.6.0",
+    "passport-oauth2": "^1.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-saml": "^3.2.4",
+    "express-session": "^1.17.3",
+    "connect-mongo": "^5.0.0",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.10.0",
+    "uuid": "^9.0.0",
+    "node-fetch": "^2.6.7",
+    "mongoose-paginate-v2": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.1",
+    "supertest": "^6.3.3"
+  },
+  "author": "",
+  "license": "MIT"
+}
